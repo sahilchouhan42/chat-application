@@ -37,7 +37,7 @@ function App() {
 
   useEffect(() => {
     if (authUser) {
-      const socket = io('http://localhost:8080', {
+      const socket = io('https://chat-application-1-hrbk.onrender.com', {
         query:{
           userId: authUser._id
         }

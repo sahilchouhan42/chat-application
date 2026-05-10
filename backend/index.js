@@ -14,7 +14,7 @@ const port = process.env.port
 connectDB()
 // app.use(cors())
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: "https://chat-application-111.netlify.app",
   credentials: true
 }));
 app.use(urlencoded({extended: true}))
