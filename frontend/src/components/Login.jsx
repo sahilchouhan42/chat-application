@@ -17,7 +17,7 @@ const Login = () => {
   const onSubmitHandler = async (e) => {
     e.preventDefault()
     try {
-      const res = await axios.post(`https://chat-application-1-hrbk.onrender.com/api/v1/user/login`, user, { withCredentials: true })
+      const res = await axios.post(`http://localhost:8080/api/v1/user/login`, user, { withCredentials: true })
       if (res.data.success) {
         localStorage.setItem(
           "user",
