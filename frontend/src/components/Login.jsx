@@ -4,6 +4,7 @@ import axios from "axios"
 import toast from "react-hot-toast"
 import { useDispatch } from "react-redux"
 import { setAuthUser } from '../redux/userSlice.js'
+import API from '../api/api.js'
 
 
 const Login = () => {
@@ -17,7 +18,7 @@ const Login = () => {
   const onSubmitHandler = async (e) => {
     e.preventDefault()
     try {
-      const res = await axios.post(`http://localhost:8080/api/v1/user/login`, user, { withCredentials: true })
+      const res = await API.post(`http://localhost:8080/api/v1/user/login`, user, { withCredentials: true })
       if (res.data.success) {
         localStorage.setItem(
           "user",
