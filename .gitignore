@@ -1,0 +1,117 @@
+# =========================
+# Root .gitignore
+# Monorepo: frontend + backend
+# =========================
+
+# -------------------------
+# Node.js dependencies
+# -------------------------
+node_modules/
+**/node_modules/
+
+# -------------------------
+# Build outputs
+# -------------------------
+dist/
+build/
+out/
+coverage/
+.next/
+.nuxt/
+.svelte-kit/
+storybook-static/
+
+# Backend build folders
+bin/
+obj/
+target/
+
+# -------------------------
+# Environment files
+# -------------------------
+.env
+.env.*
+!.env.example
+
+# -------------------------
+# Logs
+# -------------------------
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# -------------------------
+# OS files
+# -------------------------
+.DS_Store
+Thumbs.db
+
+# -------------------------
+# IDE / Editor
+# -------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# -------------------------
+# Package manager files
+# -------------------------
+.pnpm-store/
+.npm/
+.yarn/
+.yarn-cache/
+
+# -------------------------
+# Cache files
+# -------------------------
+.cache/
+.parcel-cache/
+.eslintcache
+
+# -------------------------
+# Python (if backend uses Python)
+# -------------------------
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# -------------------------
+# Java (if backend uses Java)
+# -------------------------
+*.class
+.gradle/
+
+# -------------------------
+# Docker
+# -------------------------
+docker-compose.override.yml
+
+# -------------------------
+# Testing
+# -------------------------
+coverage/
+.nyc_output/
+
+# -------------------------
+# Temporary files
+# -------------------------
+tmp/
+temp/
+
+# -------------------------
+# Database files
+# -------------------------
+*.sqlite
+*.db
+
+# -------------------------
+# Misc
+# -------------------------
+*.pid
+*.seed
+*.tgz
