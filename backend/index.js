@@ -12,11 +12,11 @@ import {server, app} from './socket/socket.js'
 const port = process.env.port
 
 connectDB()
-// app.use(cors())
-app.use(cors({
-  origin: "http://localhost:5173",
-  credentials: true
-}));
+app.use(cors())
+// app.use(cors({
+//   origin: "http://localhost:5173",
+//   credentials: true
+// }));
 app.use(urlencoded({extended: true}))
 app.use(express.json())
 app.use(cookieParser())
